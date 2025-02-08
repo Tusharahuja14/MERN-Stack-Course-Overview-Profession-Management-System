@@ -90,6 +90,10 @@ deleteuser.addEventListener("click",()=>del(i));
 }
   function del(i)
    {
+       if(document.querySelector(".added"))
+        {
+            document.querySelector(".added").remove();
+        }
   arr.splice(i,1);
   print();
   if(arr.length<1)
